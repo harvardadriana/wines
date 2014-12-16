@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>WinesApp</title>
+            <link rel="stylesheet" href="themes/adriana.min.css" />
+            <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+            <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body>
+
+<!-- first page  -->
+<section data-role="page" id="home" data-theme="c">
+	<header data-role="header" data-position="fixed">
+		<h1>WinesApp</h1>
+                              <nav data-role="navbar">
+                                             <ul>
+                                                          <li><a href="#" class="ui-btn-active ui-state-persist"><img src="img/grape.jpg" alt="logo" class="logo">WinesApp</a></li>
+                                                          <li><a href="#winetypes" data-icon="info">Wine types</a></li>
+                                                          <li><a href="#ranking" data-icon="bullets">Ranking</a></li>
+                                                          <li><a href="#rating" data-icon="edit">Rate a wine</a></li>
+                                             </ul>
+                              </nav>
+	</header>
+	<div data-role="main">
+                              <div class="container">
+                                             <div class="ui-body ui-body-a ui-corner-all">
+                                                            <div class="ui-grid-b">
+                                                                           <div class="ui-block-a">
+                                                                   	            <h3>Wine types</h3>
+                                                                   	            <p>A basic guide for beginners. Learn the differences between wines.</p>
+                                                                                       <p><a href="#winetypes"><img src="img/wineTypes.jpg" alt="wine types"></a></p>
+                                                                                       <p><a href="#winetypes" class="ui-btn ui-icon-info ui-btn-icon-left">Read more&gt;&gt;</a></p>
+                                                                           </div>
+                                                                           <div class="ui-block-b">
+                                                       		            <h3>What's hot this week</h3>
+                                                                                       <p>Check our list of the most popular wines for this week.</p>
+                                                                                       <p><a href="#ranking"><img src="img/wineCellar.jpg" alt="wine cellar"></a></p>
+                                                                                       <p><a href="#ranking" class="ui-btn ui-icon-bullets ui-btn-icon-left">Read more&gt;&gt;</a></p> 
+                                                                           </div>
+                                                                           <div class="ui-block-c">
+                                                                                       <h3>Rate a wine</h3>
+                                                                                       <p>Share your experience and help us improve our database.</p>
+                                                                                       <p><a href="#rating"><img src="img/farm.jpg" alt="wine rating"></a></p>
+                                                                                       <p><a href="#rating" class="ui-btn ui-icon-edit ui-btn-icon-left">Read more&gt;&gt;</a></p>
+                                                                           </div>
+                                                            </div>
+                                             </div>
+                              </div>
+	</div>
+
+               <footer data-role="footer" data-position="fixed">
+                              <p>Copyright &copy; 2014 WinesApp.</p>
+               </footer>
+</section>
+
+
+<!-- second page  -->
+<section data-role="page" id="winetypes" data-theme="c">
+               <header data-role="header" data-position="fixed">
+                              <h1>Wine Types</h1>
+                              <nav data-role="navbar">
+                                             <ul>
+                                                            <li><a href="#home" data-icon="home">WinesApp</a></li>
+                                                            <li><a href="#winetypes" class="ui-btn-active ui-state-persist"><img src="img/grape.jpg" alt="logo" class="logo">Wine types</a></li>
+                                                            <li><a href="#ranking" data-icon="bullets">Ranking</a></li>
+                                                            <li><a href="#rating" data-icon="edit">Rate a wine</a></li>
+                                             </ul>
+                              </nav>
+               </header>
+
+               <div data-role="main">
+                              <div class="ui-grid-b">
+                                             <div class="ui-block-a" id="whiteType">
+                                                            <!-- panel  -->
+                                                            <div class="panel">
+                                                                           <div class="front both">
+                                                                                          <img src="img/white.jpg" alt="White">
+                                                                           </div>
+                                                                           <div class="back both">
+                                                                                          <p><b><u>White wines</u></b>: contain little or no red pigmentation. Produced from green or sometimes black grapes. Types of white wine are Riesling, Gewurztraminer, Chardonnay and Sauvignon Blanc.</p>
+                                                                           </div>
+                                                            </div>
+                                             </div>
+
+                                             <div class="ui-block-b">
+                                                            <!-- panel  -->
+                                                            <div class="panel">
+                                                                           <div class="front both">
+                                                                                          <img src="img/red.jpg" alt="Red">
+                                                                           </div>
+                                                                           <div class="back both">
+                                                                                          <p><b><u>Red Wines</u></b>: produced from black grapes and have a red or blue tint. Types of red wine are Syrah, Merlot, Cabernet Sauvignon and Pinot Noir. </p>
+                                                                           </div>
+                                                            </div>
+                                             </div>
+
+                                             <div class="ui-block-c">
+                                                            <!-- panel  -->
+                                                            <div class="panel">
+                                                                           <div class="front both">
+                                                                                          <img src="img/rose.jpg" alt="Rose">
+                                                                           </div>
+                                                                           <div class="back both">
+                                                                                          <p><b><u>Rose Wines</u></b>: made from black grapes by removing the skins before they deeply color the wine. </p>
+                                                                           </div>
+                                                            </div>
+                                             </div>
+                              </div>
+                              <div class="ui-grid-b">
+                                             <div class="ui-block-a">
+                                                            <img src="img/chateaulatour.jpg" alt="Chateau Latour">
+                                             </div>
+                                             <div class="ui-block-b">
+                                                             <!-- panel  -->
+                                                            <div class="panel">
+                                                                           <div class="front both">
+                                                                                          <img src="img/spark.jpg" alt="Sparkling">
+                                                                           </div>
+                                                                           <div class="back both">
+                                                                                          <p><b><u>Sparkling wines</u></b>: made from any variety of grapes. Contain carbon dioxide bubbles. Sparkling can be red, white or rose.</p>
+                                                                           </div>
+                                                            </div>
+                                             </div>
+                                             <div class="ui-block-c">
+                                                            <img src="img/wineCellar.jpg" alt="Wine Cellar">
+                                             </div>
+                              </div>
+               </div>
+
+               <footer data-role="footer" data-position="fixed">
+                              <p>Copyright &copy; 2014 WinesApp.</p>
+               </footer>
+</section>
+
+
+<!-- third page  -->
+<section data-role="page" id="ranking" data-theme="c">
+               <header data-role="header" data-position="fixed">
+                              <h1>WinesApp</h1>
+                              <nav data-role="navbar">
+                                             <ul>
+                                                            <li><a href="#home" data-icon="home">WinesApp</a></li>
+                                                            <li><a href="#winetypes" data-icon="info">Wine types</a></li>
+                                                            <li><a href="#" class="ui-btn-active ui-state-persist"><img src="img/grape.jpg" alt="logo" class="logo">Ranking</a></li>
+                                                            <li><a href="#rating" data-icon="edit">Rate a wine</a></li>
+                                             </ul>
+                              </nav>
+               </header>
+
+               <div data-role="main" class="ui-content">
+                              <!-- panel with rounded corners  -->
+                              <div class="ui-body ui-body-a ui-corner-all" id="corners">
+                                             <table data-role="table" id="rankingtable" data-mode="columntoggle" class="ui-body-d shadow table-stripe ui-responsive" data-column-btn-theme="a" data-column-btn-text="Select columns" data-column-popup-theme="a" >
+                                                            <thead>
+                                                                           <tr class="ui-bar-d">
+                                                                                          <th data-priority="1" id="colrank"> Rank </th>
+                                                                                          <th id="colproducer"> Producer/Name </th>
+                                                                                          <th data-priority="3" id="colvintage"> Vintage </th>
+                                                                                          <th data-priority="5" id="colprice"> Price </th>
+                                                                           </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                           <tr>
+                                                                                          <td> 1 </td>
+                                                                                          <td> Rioja Imperial Gran Reserva </td>
+                                                                                          <td> 2004 </td>
+                                                                                          <td> $63 </td>
+                                                                           </tr>
+                                                                           <tr>
+                                                                                          <td> 2 </td>
+                                                                                          <td> Ch&#226;teau Canon-La Gaffeli&#232;re </td>
+                                                                                          <td> 2010 </td>
+                                                                                          <td> $103 </td>
+                                                                           </tr>
+                                                                           <tr>
+                                                                                          <td> 3 </td>
+                                                                                          <td> Hewitt Cabernet Sauvignon Rutherford </td>
+                                                                                          <td> 2010 </td>
+                                                                                          <td> $92 </td>
+                                                                           </tr>
+                                                                           <tr>
+                                                                                          <td> 4 </td>
+                                                                                          <td> Lewis Cabernet Sauvignon Napa Valley </td>
+                                                                                          <td> 2010 </td>
+                                                                                          <td> $135 </td>
+                                                                           </tr>
+                                                                           <tr>
+                                                                                          <td> 5 </td>
+                                                                                          <td> Quilceda Creek Cabernet Sauvignon Columbia </td>
+                                                                                          <td> 2010 </td>
+                                                                                          <td> $135 </td>
+                                                                           </tr>
+                                                            </tbody>
+                                             </table>                                        
+                              </div>
+               </div>
+               <footer data-role="footer" data-position="fixed">
+                              <p> Copyright &copy; 2014 WinesApp. </p>
+               </footer>
+</section>
+
+
+<!-- fourth page  -->
+<section data-role="page" id="rating">
+               <header data-role="header" data-position="fixed" data-theme="c">
+                              <h1>WinesApp</h1>
+                              <nav data-role="navbar">
+                                             <ul>
+                                                            <li><a href="#home" data-icon="home">WinesApp</a></li>
+                                                            <li><a href="#winetypes" data-icon="info">Wine types</a></li>
+                                                            <li><a href="#ranking" data-icon="bullets">Ranking</a></li>
+                                                            <li><a href="#" class="ui-btn-active ui-state-persist"><img src="img/grape.jpg" alt="logo" class="logo">Rate a wine</a></li>
+                                             </ul>
+                              </nav>
+               </header>
+               <div data-role="main">
+                              <div class="ui-grid-a">
+
+                                             <div class="ui-block-a" id="x">
+                                                            <div class="left">
+                                                                           <h3>Rate your wine:</h3>
+                                                                           <!-- enter wine name -->
+                                                                           <div class="ui-field-contain">
+                                                                                          <label for="winename">Wine name: </label>
+                                                                                          <input type="text" id="winename">
+                                                                                          <span class="blank"></span>
+                                                                           </div>
+                                                                           <!-- upload wine image -->
+                                                                           <div class="ui-field-contain">
+                                                                                          <label for="file"> Upload Wine Label </label>
+                                                                                          <input type="file" name="file" id="file">
+                                                                           </div>
+                                                                           <!-- wine types -->
+                                                                           <div class="ui-field-contain">
+                                                                                          <label for="select-wine" class="select"> Select wine type: </label>
+                                                                                          <select name="select-wine" id="select-wine" data-native-menu="false">
+                                                                                                         <option value="white"> White: Riesling, Gewurztraminer, Chardonnay, Sauvignon Blanc </option>
+                                                                                                         <option value="red"> Red: Cabernet Sauvignon, Merlot, Pinot Noir, Syrah... </option>
+                                                                                                         <option value="rose"> Rose </option>
+                                                                                                         <option value="sparkling"> Sparkling </option>
+                                                                                          </select>
+                                                                           </div>
+                                                                           <!-- aroma -->
+                                                                           <div class="ui-field-contain">
+                                                                                          <label for="select-aroma" class="select"> Select one or more aromas: </label>
+                                                                                          <select name="select-aroma" id="select-aroma" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
+                                                                                                         <option> Aromas: </option>
+
+                                                                                                         <optgroup label="Herbaceous or vegetative">
+                                                                                                                        <option value="fresh"> Fresh </option>
+                                                                                                                        <option value="cannedcooked"> Canned/Cooked </option>
+                                                                                                                        <option value="dried"> Dried </option>
+                                                                                                         </optgroup>
+
+                                                                                                         <optgroup label="Fruity">
+                                                                                                                        <option value="citrus"> Citrus </option>
+                                                                                                                        <option value="berry"> Berry </option>
+                                                                                                                        <option value="treefruit"> Tree Fruit </option>
+                                                                                                                        <option value="tropicalfruit"> Tropical Fruit </option>
+                                                                                                                        <option value="driedfruit"> Dried Fruit </option>
+                                                                                                                        <option value="other"> Other</option>
+                                                                                                         </optgroup>
+
+                                                                                                         <optgroup label="Spicy">
+                                                                                                                        <option value="spicy"> Spicy </option>
+                                                                                                         </optgroup>
+
+                                                                                                         <optgroup label="Floral">
+                                                                                                                        <option value="floral"> Floral </option>
+                                                                                                         </optgroup>
+
+                                                                                                         <optgroup label="Microbiological">
+                                                                                                                        <option value="yeasty"> Yeasty </option>
+                                                                                                                        <option value="lactic"> Lactic </option>
+                                                                                                                        <option value="horsey-mousey"> Horsey/Mousey </option>
+                                                                                                         </optgroup>
+
+                                                                                                         <optgroup label="Oxidized">
+                                                                                                                        <option value="oxidized"> Oxidized </option>
+                                                                                                         </optgroup>
+
+                                                                                                         <optgroup label="Pungent">
+                                                                                                                        <option value="Hot"> Hot </option>
+                                                                                                                        <option value="Cool"> Cool </option>
+                                                                                                         </optgroup>
+
+                                                                                                         <optgroup label="Chemical">
+                                                                                                                        <option value="petroleum"> Petroleum </option>
+                                                                                                                        <option value="sulphur"> Sulphur </option>
+                                                                                                                        <option value="pungent"> Pungent </option>
+                                                                                                         </optgroup>
+
+                                                                                                         <optgroup label="Earthy">
+                                                                                                                        <option value="earthy"> Earthy </option>
+                                                                                                                        <option value="moldy"> Moldy </option>
+                                                                                                         </optgroup>
+
+                                                                                                         <optgroup label="Woody">
+                                                                                                                        <option value="resinuous"> Resinuous </option>
+                                                                                                                        <option value="phenolic"> Phenolic </option>
+                                                                                                                        <option value="burned"> Burned </option>
+                                                                                                         </optgroup>
+
+                                                                                                         <optgroup label="Caramel">
+                                                                                                                        <option value="caramel"> Caramel </option>
+                                                                                                         </optgroup>
+
+                                                                                                         <optgroup label="Nutty">
+                                                                                                                        <option value="nutty"> Nutty </option>
+                                                                                                         </optgroup>
+                                                                                          </select>
+                                                                           </div>
+                                                                           <!--  acidity  -->
+                                                                           <div class="ui-field-contain">
+                                                                                          <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                                                                                                         <legend> Acidity </legend>
+                                                                                                         <input type="radio" name="acidity-choice" id="tart" value="tart" checked="checked">
+                                                                                                         <label for="tart"> Tart </label>
+                                                                                                         <input type="radio" name="acidity-choice" id="crisp" value="crisp">
+                                                                                                         <label for="crisp"> Crisp </label>
+                                                                                                         <input type="radio" name="acidity-choice" id="soft" value="soft">
+                                                                                                         <label for="soft"> Soft </label>
+                                                                                                         <input type="radio" name="acidity-choice" id="flabby" value="flabby">
+                                                                                                         <label for="flabby"> Flabby </label>
+                                                                                          </fieldset>
+                                                                           </div>
+                                                            </div>
+                                             </div>
+
+                                             <div class="ui-block-b" id="y">
+                                                            <div class="right">
+                                                                           <!-- Sweetness  -->
+                                                                           <div class="ui-grid-b" id="sweetness">
+                                                                                          <div class="ui-block-a">
+                                                                                                         <p>Dry</p>
+                                                                                          </div>
+                                                                                          <div class="ui-block-b">
+                                                                                                         <label for="sweet"> <span id="swe">Sweetness</span></label>
+                                                                                                         <input type="range" name="sweetness" id="sweet" value="0" min="0" max="100" step="1" data-highlight="true">
+                                                                                          </div>
+                                                                                          <div class="ui-block-c">
+                                                                                                         <p>Sweet</p>
+                                                                                          </div>
+                                                                           </div>
+                                                                           <!-- Body  -->
+                                                                           <div class="ui-grid-b" id="body">
+                                                                                          <div class="ui-block-a">
+                                                                                                         <p>Light body</p>
+                                                                                          </div>
+                                                                                          <div class="ui-block-b">
+                                                                                                         <label for="bodytype"> Body </label>
+                                                                                                         <input type="range" name="bodytype" id="bodytype" value="0" min="0" max="100" step="1" data-highlight="true">
+                                                                                          </div>
+                                                                                          <div class="ui-block-c">
+                                                                                                         <p>Full body</p>
+                                                                                          </div>
+                                                                           </div>
+
+                                                                           <!-- Tannin  -->
+                                                                           <div class="ui-grid-b" id="tannin">
+                                                                                          <div class="ui-block-a">
+                                                                                                         <p>Low</p>
+                                                                                          </div>
+                                                                                          <div class="ui-block-b">
+                                                                                                         <label for="tanni"> Tannin </label>
+                                                                                                         <input type="range" name="tanni" id="tanni" value="0" min="0" max="100" step="1" data-highlight="true">
+                                                                                          </div>
+                                                                                          <div class="ui-block-c">
+                                                                                                         <p>High</p>
+                                                                                          </div>
+                                                                           </div>
+                                                                            <div class="ui-grid-b" id="button">
+                                                                                          <div class="ui-block-a">
+                                                                                          </div>
+                                                                                          <div class="ui-block-b">
+                                                                                                         <!-- button -->
+                                                                                                         <button name="submit" type="submit" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-mail">Submit</button>
+                                                                                          </div>
+                                                                           </div>
+                                                            </div>
+                                             </div>
+                              </div>
+               </div>
+
+               <footer data-role="footer" data-position="fixed" data-theme="c">
+                              <p>Copyright &copy; 2014 WinesApp.</p>
+               </footer>
+</section>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
